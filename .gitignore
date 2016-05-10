@@ -1,4 +1,6 @@
 node_modules
+node_modules/
+.DS_Store
 .sass_cache
 .sass-cache/
 tickets.sublime-project
