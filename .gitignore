@@ -1,0 +1,5 @@
+node_modules
+.sass_cache
+.sass-cache/
+tickets.sublime-project
+tickets.sublime-workspace

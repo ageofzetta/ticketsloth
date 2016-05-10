@@ -1,0 +1,16 @@
+
+html,body{
+	font-size: 16px;
+}
+*{
+	box-sizing:border-box;
+}
+
+/* VENDOR / BASE */
+@import 'vendor/bootstrap';
+@import 'vendor/font-awesome';
+@import 'vendor/mediaqueries';
+
+/* OUR STYLES */
+@import 'modules/main';
+@import 'modules/homepage';
