@@ -1,0 +1,46 @@
+//DOCTYPE, META & Styles
+include includes/head.jade
+// Header & Menu
+include includes/header-s.jade
+// first fold
+.wrapper
+  .container
+    .section
+      span.text WE FOUND 14 PEOPLE SELLING TICKETS FOR VELVET REVOLVER:
+  .container
+    .col-md-8
+      .selling_tickets
+        include includes/buy_ticket.jade
+    .col-md-4.filter_results
+      .title Price
+      input(type="range")
+      .title Posted in the last:
+        select
+          option(value="1") Hi
+      .title Seller history:
+
+  // Pagination
+  nav.centered
+    ul.pagination
+      li.disabled
+        a(href='#', aria-label='Previous')
+          span(aria-hidden='true') «
+      li.active
+        a(href='#')
+          | 1 
+          span.sr-only (current)
+      li
+        a(href='#') 2
+      li
+        a(href='#') 3
+      li
+        a(href='#') 4
+      li
+        a(href='#') 5
+      li
+        a(href='#', aria-label='Next')
+          span(aria-hidden='true') »
+  .container
+    include includes/foot-may.jade
+  // /container
+// /wrapper

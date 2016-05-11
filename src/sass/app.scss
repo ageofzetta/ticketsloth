@@ -5,7 +5,12 @@ html,body{
 *{
 	box-sizing:border-box;
 }
+.btn-custom, .btn-white{
+	width: auto;
+	height: auto;
+	padding: 1ex 5ex;
 
+}
 /* VENDOR / BASE */
 @import 'vendor/bootstrap';
 @import 'vendor/font-awesome';
@@ -15,3 +20,4 @@ html,body{
 @import 'modules/main';
 @import 'modules/homepage';
 @import 'modules/venue_list';
+@import 'modules/_search_results';
