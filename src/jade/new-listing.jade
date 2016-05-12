@@ -1,0 +1,96 @@
+//DOCTYPE, META & Styles
+include includes/head.jade
+// first fold
+// Header
+.container.background-top
+  // Static navbar
+  nav.navbar.navbar-default
+    .container
+      .navbar-header
+        button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand.logo(href='#') TicketSloth
+      #navbar.navbar-collapse.collapse
+        ul.nav.navbar-nav.main
+          li
+            a(href='#') Sell Tickets
+          li
+            a(href='#about') My Tickets
+        ul.nav.navbar-nav.navbar-right.main
+          li
+            a(href='#') Listings
+          li
+            a(href='#') Events
+          li
+            a(href='#') Venues
+          li
+            a(href='#') Sign In
+          li
+            a(href='#') Log In
+      // /.nav-collapse
+      .section
+        span.text.centered.font27 Add a new listing
+    // /.container-fluid
+  // /.header
+// /container
+// first fold
+.wrapper
+  .container
+    .section.mtop2
+      // New listing Form
+      form#newListing
+        .row
+          .col-md-6
+            .form-group
+              label(for='Title') Title
+              input#title.form-control(type='text', placeholder='Title of your listing')
+            .form-group
+              label(for='listingDesc') Listing Description
+              input#listingDesc.form-control.longInput(type='text', placeholder='Describe your listing details')
+              br
+              | Hint: Some hint about the description.
+            .Rectangle-51
+              .box__input
+                i.fa.fa-camera-retro.fa-3.camera-icon(aria-hidden='true')
+                label(for='file')
+                  span.box__dragndrop
+                span.box__button(type='submit') Upload image of your ticket
+                br
+                p
+                  span.box__uploading Uploading…
+                  span.box__success Done!
+                  span.box__error Error!
+          .col-md-6
+            .form-group
+              label(for='Venue') Venue
+              input#Venue.form-control(type='text', placeholder='Name of venue the event takes place')
+          .col-md-4
+            .form-group
+              label(for='Price') Price
+              input#Price.form-control(type='text', placeholder='Price per ticket in US dollars')
+              | Describe your listing details
+          .col-md-2
+            .form-group
+              label(for='Quantity') Quantity
+              input#Quantity.form-control(style='display:inline-block;', type='text', placeholder='Number')
+          .col-md-6
+            .form-group
+              label(for='Event') Event
+              input#Event.form-control(type='text', placeholder='Name of event ie. Justin Bieber @ TheVenue Feb 1st')
+              br
+              | Hint: Ticketsloth will suggest event names as you type.
+            a#legend.vermillion(href='#') Can't find your event?
+        .col-md-6
+          button.btn.btn-custom.mtop2(type='submit') CONFIRM AND SUBMIT
+    // /container
+  // /wrapper
+// Scripts
+script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+script.
+  window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\\/script>')
+script(src='js/bootstrap.js')
+// IE10 viewport hack for Surface/desktop Windows 8 bug
+script(src='../../assets/js/ie10-viewport-bug-workaround.js')

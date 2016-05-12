@@ -1,0 +1,92 @@
+//DOCTYPE, META & Styles
+include includes/head.jade
+// first fold
+// Header
+.container.background-top
+  // Static navbar
+  nav.navbar.navbar-default
+    .container
+      .navbar-header
+        button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand.logo(href='#') TicketSloth
+      #navbar.navbar-collapse.collapse
+        ul.nav.navbar-nav.main
+          li
+            a(href='#') Sell Tickets
+          li
+            a(href='#about') My Tickets
+        ul.nav.navbar-nav.navbar-right.main
+          li
+            a(href='#') Listings
+          li
+            a(href='#') Events
+          li
+            a(href='#') Venues
+          li
+            a(href='#') Sign In
+          li
+            a(href='#') Log In
+      // /.nav-collapse
+      .section
+        span.text.centered.font27 Join. Get tickets. Have an incredible experience.
+    // /.container-fluid
+  // /.header
+// /container
+// first fold
+.wrapper
+  .container
+    .col-md-4
+    .col-md-4.section.mtop2
+      form.form-signin
+        .fbRectangle.bold
+          i.fa.fa-facebook.mright(aria-hidden='true')
+          span.font10 SIGN UP WITH FACEBOOK
+        .centered
+          h2.font10.bold
+            span.line
+            | SIGN UP WITH FACEBOOK
+            span.line
+        i.fa.fa-user.font-a(aria-hidden='true')
+        label.sr-only(for='inputFirstname') First name
+        input#Firstname.form-control(type='text', placeholder='First name', required='', autofocus='')
+        i.fa.fa-user.font-a(aria-hidden='true')
+        label.sr-only(for='inputLastname') Last name
+        input#Lastname.form-control(type='text', placeholder='Last name', required='', autofocus='')
+        i.fa.fa-user.font-a(aria-hidden='true')
+        label.sr-only(for='inputPhonenumber') Phone number
+        input#Phonenumber.form-control(type='text', placeholder='Phonen umber', required='', autofocus='')
+        i.fa.fa-user.font-a(aria-hidden='true')
+        label.sr-only(for='inputEmail') Email adress
+        input#Email.form-control(type='text', placeholder='Email', required='', autofocus='')
+        i.fa.fa-key.font-a(aria-hidden='true')
+        label.sr-only(for='inputPassword') Password
+        input#inputPassword.form-control(type='password', placeholder='Password', required='')
+        .checkbox
+          p.font12
+            label
+              input(type='checkbox', value='remember-me')
+              |  I’d like to receive info about popular events, and ticket deals.
+          span.font12
+            p
+              | We ask for phone numbers to reduce spam postings and protect you from scammers. We will not disclose this information to anyone.
+            p
+              | By signing up, I agree to Ticketsloth's Terms of Service, Privacy Policy, and Ticket Refund Policy.
+        button.btn-custom2.font20(type='submit') SIGN UP
+    .col-md-4
+    // Section Icons
+  // /container
+// /wrapper
+//
+  Bootstrap core JavaScript
+  ==================================================
+// Placed at the end of the document so the pages load faster
+script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+script.
+  window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\\/script>')
+script(src='js/bootstrap.js')
+// IE10 viewport hack for Surface/desktop Windows 8 bug
+script(src='../../assets/js/ie10-viewport-bug-workaround.js')

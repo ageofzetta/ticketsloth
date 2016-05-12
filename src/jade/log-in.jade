@@ -1,0 +1,80 @@
+//DOCTYPE, META & Styles
+include includes/head.jade
+// first fold
+.container.background-top
+  // Static navbar
+  nav.navbar.navbar-default
+    .container
+      .navbar-header
+        button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand.logo(href='#') TicketSloth
+      #navbar.navbar-collapse.collapse
+        ul.nav.navbar-nav.main
+          li
+            a(href='#') Sell Tickets
+          li
+            a(href='#about') My Tickets
+        ul.nav.navbar-nav.navbar-right.main
+          li
+            a(href='#') Listings
+          li
+            a(href='#') Events
+          li
+            a(href='#') Venues
+          li
+            a(href='#') Sign In
+          li
+            a(href='#') Log In
+      // /.nav-collapse
+      .section
+        span.text.centered.font27 Welcome back
+    // /.container-fluid
+  // /.header
+// /container
+// first fold
+.wrapper
+  .container
+    .col-md-4
+    .col-md-4.section.mtop2
+      form.form-signin
+        .fbRectangle.bold
+          i.fa.fa-facebook.mright(aria-hidden='true')
+          span.font10 LOGIN WITH FACEBOOK
+        .centered
+          h2.font10.bold
+            span.line
+            | OR LOGIN WITH EMAIL
+            span.line
+        i.fa.fa-user(aria-hidden='true')
+        label.sr-only(for='inputUsername') Username
+        input#Username.form-control(type='text', placeholder='Username', required='', autofocus='')
+        br
+        i.fa.fa-key(aria-hidden='true')
+        label.sr-only(for='inputPassword') Password
+        input#inputPassword.form-control(type='password', placeholder='Password', required='')
+        br
+        button.btn-custom2.font20(type='submit') LOGIN
+        .checkbox
+          label
+            input(type='checkbox', value='remember-me')
+            |  Remember me
+          a.right.vermillion(href='#') Forgot your password?
+    .col-md-4
+    // Section Icons
+  // /container
+// /wrapper
+
+//
+  Bootstrap core JavaScript
+  ==================================================
+// Placed at the end of the document so the pages load faster
+script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+script.
+  window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\\/script>')
+script(src='js/bootstrap.js')
+// IE10 viewport hack for Surface/desktop Windows 8 bug
+script(src='../../assets/js/ie10-viewport-bug-workaround.js')
