@@ -1,0 +1,87 @@
+//DOCTYPE, META & Styles
+include includes/head.jade
+// Header & Menu
+include includes/header-s.jade
+// first fold
+.wrapper
+  .container
+    .venue-detail
+      .venue-detail-highlight(style="background-color: black;background-image:url('http://static1.squarespace.com/static/538b5739e4b0f18802f0bcd3/546614f1e4b000d23575ba1f/54e79602e4b003ce1bcbc01b/1424463366163/VENUE_2.JPG?format=750w')")
+        .venue-info
+          .city CHICAGO,IL
+          .location
+            .type CONCERT HALL
+            .name City Winery
+      .venue-detail-summary
+        .features
+          img(src='/assets/images/alcohol-icon.svg')
+          img(src='/assets/images/food-icon.svg')
+          img(src='/assets/images/seats-icon.svg')
+          img(src='/assets/images/coatcheck-icon.svg')
+        .venue-description
+          | Nestled in the infamous West Loop, City Winery Chicago is a unique facility, combining a fully functioning winery with intimate concerts, food & wine classes, private events in a variety of configurations, and fine dining. We have created a compelling mix for our sophisticated clientel of foodies, and active cultural patrons - bringing the wine country experience to the middle of a large city.
+        .review_section
+            .left_column
+              .title 90 Reviews
+              .stars
+                a.fa.fa-star(href="#")
+                a.fa.fa-star(href="#")
+                a.fa.fa-star(href="#")
+                a.fa.fa-star(href="#")
+                a.fa.fa-star-o(href="#")
+              .action
+                .action-icon
+                  i.ionicons.ion-images
+                a.description(href="#") SEE PHOTOS
+              .action
+                .action-icon
+                  i.fa.fa-star.red_circle_around(href="#")
+
+                a.description(href="#") LEAVE A REVIEW
+              .action
+                .action-icon
+                  i.fa.fa-globe
+                a.description(href="#") VISIT WEBSITE
+            .right_column
+              .review_sample “It has a separate concert hall that hosts first rate shows and a large courtyard for dining alfresco.”
+              button.see_upcoming_events 
+                | SEE UPCOMING EVENTS
+                i.arrow_down.ionicons.ion-android-arrow-down
+      .venue-detail-directions
+        span.address
+          | 1260 Ave of the Americas New York, NY 10020
+        a.get_directions_link.font10(href="#")
+          | GET DIRECTIONS
+        div
+          iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1654.6301608883498!2d6.23350574586994!3d45.7762976140847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b94fc718a4c7b%3A0xe134c5da04b3c46!2s742+Evergreen+Design!5e0!3m2!1ses-419!2smx!4v1462682686323', width='100%', height='231', frameborder='0', style='border:0', allowfullscreen='')
+  .container.flex-row
+    .upcoming_events
+      include includes/upcoming_events.jade
+    .featured-event
+      .event-card
+        .event_boxl
+          span.date 29 DIC 2015
+          span.title
+            | Justin Bieber @TheVenue
+          span.description
+            | It was a humorously perilous business for both of us. For, before we proceed further, it must be said that the monkey-rope was fast at both ends; fast to Queequeg's br
+          .friends_attending
+            .title 25 friends are attending
+            .pics
+              img.rounded(src='/assets/images/portrait/uno.jpg')
+              img.rounded(src='/assets/images/portrait/dos.jpg')
+              img.rounded(src='/assets/images/portrait/tres.jpg')
+              img.rounded(src='/assets/images/portrait/cuatro.jpg')
+              img.rounded(src='/assets/images/portrait/uno.jpg')
+              img.rounded(src='/assets/images/portrait/dos.jpg')
+          button.btn-tickets.btn-custom SEE TICKETS
+          button.btn-white WISHLIST
+        .event_boxr
+          .background(style='background-image:url(/assets/images/portrait/large-p.png)')
+          .gradient
+            .title FROM
+            .price 45
+  .container
+    include includes/foot-may.jade
+  // /container
+// /wrapper

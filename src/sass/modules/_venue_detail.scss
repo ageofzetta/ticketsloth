@@ -1,0 +1,341 @@
+.upcoming_events{
+	min-width: 48.75em;
+    padding-right: 1.875em;
+}
+.venue-detail {
+	margin-bottom: 2em;
+    height: 22.75em;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #ffffff;
+    // border: solid 1px #dadfe6;
+    display: flex;
+    flex-direction: row;
+    .venue-detail-highlight {
+        background-size: 100% 100%;
+        max-width: 28.75em;
+        min-width: 28.75em;
+        position: relative;
+        .venue-info {
+            width: 28.75em;
+            height: 22.75em;
+            top: 0;
+            left: 0;
+            position: absolute;
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(122, 34, 163, 0.0));
+            display: flex;
+            flex-direction: column;
+            color: #FFF;
+            .city {
+                font-size: .91875em;
+                background-color: #7a22a3;
+                color: #FFF;
+                position: absolute;
+                top: .925170068em;
+                left: 0;
+                padding: 1ex;
+                border-radius: 3.1px;
+            }
+            .location {
+                margin: 0 2.25em;
+                margin-top: auto;
+                margin-bottom: 1.4375em;
+                .type{
+					border-radius: 3px;
+					background-color: #f1f5f7;
+					display: inline-block;
+				    color: #000;
+				    font-size: .625em;
+				    padding: 0.3em .7em;
+				    font-weight: bolder;
+                }
+                .name{
+					font-size: 3em;
+					font-weight: bolder;
+                }
+            }
+        }
+    }
+    .venue-detail-summary{
+    	padding: 1.875em;
+    	.features{
+    		& > img{
+    			margin-right: 1.25em;
+    		}
+    	}
+    	.venue-description{
+    		margin: 1.875em 0;
+    		font-size: 0.75em;
+    		max-height: 10em;
+    		overflow:hidden;
+    	}
+    	.review_section{
+    		display: flex;
+    		.left_column{
+    			.title{
+    				font-size: .7875em;
+    				font-weight: bold;
+    			}
+    			.stars {
+    				
+					a, a:hover{
+						color: #ffce20;
+						text-decoration:none;
+					}
+    			}
+    		}
+
+    		.right_column{
+    			max-width: 12.625em;
+    			min-width: 12.625em;
+    			margin-left: auto;
+    			display: flex;
+			    flex-direction: column;
+    			.review_sample{
+    				font-size: .75em;
+    			}
+    			.see_upcoming_events{
+    				background: #ee190b;
+				    color: white;
+				    border: 1px solid #ee190b;
+				    border-radius: 2.3px;
+				    font-size: 12px;
+				    padding: 0.75ex 2ex;
+				    margin-top: auto;
+				    display: flex;
+				    .arrow_down{
+					    display: flex;
+					    align-items:center;
+				    	margin-left: auto;
+				    	font-size: 1.2em;
+
+				    }
+    			}
+
+    		}
+    		.action{
+    			display: flex;
+				color: #ee190b;
+				align-items: center;
+    			.red_circle_around{
+					background-color: #ee190b;
+				    width: 1.25em;
+				    height: 1.25em;
+				    border-radius: 100%;
+				    color: #FFF;
+				    display: flex;
+				    justify-content: center;
+				    align-items: center;
+				    box-sizing: border-box;
+				    font-size: 0.7em;
+    			}
+    			.action-icon {
+				    font-size: 1.428571429em;
+				    margin-right: .490000919em;
+				}
+				.description{
+					font-size: .625em;
+					font-weight: bolder;
+					color: #ee190b;
+					text-decoration:none;
+				}
+    		}
+    		.review_sample{
+    			font-style: italic;
+    		}
+    	}
+    }
+    .venue-detail-directions{
+    	padding: 1.875em;
+	    min-width: 9.625em;
+	    box-sizing: content-box;
+	    display: flex;
+	    flex-direction: column;
+    	.address {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            overflow: hidden;
+            font-size: .8125em;
+        }
+        .get_directions_link {
+            font-size: .625em;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: #ee190b;
+        }
+    }
+}
+
+.upcoming_event{
+  height: 70px;
+  background-color: #ffffff;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1em;
+  justify-content:space-between;
+
+  .date{
+  	width: 4.275em;
+  	height: 4.375em;
+	background-color: #7a22a3;
+	font-weight: bolder;
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+	color:#FFF;
+	justify-content:center;
+	.dd{
+		font-size: 1.875em;
+		line-height: 1em;
+	}
+	.month,.ddd{
+		font-size: .75em;
+	}
+  }
+  .event_summary{
+  	width: calc(100% - 4.275em);
+  	display: flex;
+    align-items: center;
+    padding: 1.4375em;
+	.find_tickets{
+		background: #ee190b;
+	    color: white;
+	    border: 1px solid #ee190b;
+	    border-radius: 2.3px;
+	    font-size: 12px;
+	    padding: 0.75ex 2ex;
+	    display: flex;
+        max-height: 1.916666667em;
+		flex-direction:column;
+		justify-content: center;
+	}
+	  .event_name{
+	  	flex: 1;
+	    .title{
+	      font-size: 1em;
+	      font-weight: bolder;
+	    }
+	    .description{
+	      font-size: 0.8125em;
+	    }
+	  }
+	  .event_price{
+	  	flex: 1;
+	  	display: flex;
+		margin: 0 1.087719298em;
+		align-items: baseline;
+	  	.description{
+	  		font-weight: bold;
+	  		font-size: .75em;
+	  		margin-right: 3px;
+	  	}
+	  	.title{
+			color: #59b365;
+			font-size: 1.25em;
+			font-weight: bolder;
+			&::before{
+				content:'$';
+			}
+	  	}
+	  }
+  }
+
+}
+.featured-event{
+
+  .event-card{
+
+		box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+		display: flex;
+		width: 22.5em;
+		border-radius: 3px;
+		background-color: #ffffff;
+		margin: 0 auto;
+		.event_boxr {
+			position: relative;
+			.background{
+				width: 8.0625em;
+				height: 23.4375em;
+			    background-size: 100% 100%;
+			    position: relative;
+
+			}
+		    .gradient{
+		    	position: absolute;
+		    	top:0;
+		    	left:0;
+		    	width: 8.0625em;
+				height: 23.4375em;
+			    background-image: linear-gradient(to bottom, rgba(122, 34, 163, 0), rgba(122, 34, 163, 0.55));
+			    display: flex;
+			    flex-direction: column;
+			    padding: 1em;
+			    align-items: center;
+			    color: #FFF;
+		    	font-weight: 600;
+		    	letter-spacing:.0625em;
+			    .title{
+			    	margin-top: auto;
+			    	font-size: .8375em;
+			    }
+			    .price{
+			    	font-size: 1.525em;	
+			    	&::before{
+				      content:'$';
+				     }
+			    }
+		    }
+		}
+		.date{
+			font-weight: 600;
+			font-size: .6875em;
+			color: #7a22a3;
+		}
+		.event_boxl {
+			min-width: 14.4375em;
+			max-width: 14.4375em;
+			padding: 1.25em;
+			float: left;
+			display: flex;
+			flex-direction: column;
+			.description{
+				font-size: .6875em;
+			    line-height: 1.5em;
+				color: #9495a6;
+			}
+			> .title{
+				font-size: 1.75em;
+				margin: .75ex 0;
+			}
+			.btn-custom, .btn-white{
+				width: auto;
+				height: auto;
+				padding: 1ex 5ex;
+				margin: 0;
+				font-size: .6875em;
+				font-weight: bolder;
+				margin-top: .625em;
+
+			}
+			.friends_attending{
+				margin-top: auto;
+				.title{
+					font-size: 11px;
+					color: #7a22a3;
+					margin: .727272727em 0;
+					font-weight: bolder;
+				}
+				img.rounded{
+					width: 1.5em;
+					height: 1.5em;
+					margin: 0 0.5ex 0.5ex 0;
+				}
+			}
+		}
+  
+	
+  }
+}

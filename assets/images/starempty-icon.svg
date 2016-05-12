@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+    <title>DDF7EF98-5381-46DE-BA4F-31C0EC6FE282</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <polygon id="path-1" points="84.1708861 13.6363636 78.9812631 16.445609 79.9723929 10.4955318 75.7738997 6.28166369 81.5760746 5.41355912 84.1708861 0 86.7656976 5.41355912 92.5678724 6.28166369 88.3693792 10.4955318 89.360509 16.445609"></polygon>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="17.6582278" height="18.1818182" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Venue-Detail" transform="translate(-713.000000, -489.000000)" stroke="#FFCE20" stroke-width="2.34000007">
+            <g id="Rectangle-1-+-Velvet-Revolver:-+-Rectangle-2-+-MUSIC-CONCERT-+-More-info" transform="translate(150.000000, 266.000000)">
+                <g id="More-info" transform="translate(458.000000, 0.000000)">
+                    <g id="stars-+-90-Reviews" transform="translate(30.000000, 202.000000)">
+                        <g id="stars" transform="translate(0.000000, 21.818182)">
+                            <use id="starempty-icon" mask="url(#mask-2)" xlink:href="#path-1"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

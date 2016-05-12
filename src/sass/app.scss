@@ -11,13 +11,29 @@ html,body{
 	padding: 1ex 5ex;
 
 }
+.container.background-top{
+	margin-bottom: 2em;
+}
+
+.flex-row{
+	display: flex;
+	position: relative;
+	flex-direction:row
+}
+.flex-column{
+	display: flex;
+	position: relative;
+	flex-direction:column
+}
 /* VENDOR / BASE */
 @import 'vendor/bootstrap';
 @import 'vendor/font-awesome';
 @import 'vendor/mediaqueries';
+@import 'vendor/ionicons';
 
 /* OUR STYLES */
 @import 'modules/main';
 @import 'modules/homepage';
 @import 'modules/venue_list';
 @import 'modules/_search_results';
+@import 'modules/_venue_detail';
