@@ -25,6 +25,7 @@ html,body{
 	position: relative;
 	flex-direction:column
 }
+.venue_bx{background:white;}
 /* VENDOR / BASE */
 @import 'vendor/bootstrap';
 @import 'vendor/font-awesome';
@@ -37,3 +38,7 @@ html,body{
 @import 'modules/venue_list';
 @import 'modules/_search_results';
 @import 'modules/_venue_detail';
+@import 'modules/login';
+@import 'modules/profile';
+@import 'modules/listing_details';
+@import 'modules/adding';
