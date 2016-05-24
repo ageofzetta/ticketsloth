@@ -1,0 +1,6 @@
+.modalContent {
+  max-width: 556px;
+  height: 506px;
+  border-radius: 3px;
+  background-color: #f5faff;
+}

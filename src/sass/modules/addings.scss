@@ -45,14 +45,16 @@
     height: 30px;
     font-size: 30px;
 }
-.white-square{
+.white-square {
     background: white;
     width: 100px;
     height: 100px;
-    /* flex: inherit; */
     display: inline-block;
-    text-align:center;
-    color:#7a22a3}
+    text-align: center;
+    color: #7a22a3;
+    margin-right:10px;
+    margin-bottom:10px;
+}
 .longInput{height: 125px;}
 
 .venue-boxes {
@@ -63,4 +65,19 @@
     width:44.9px;
     height: 30px;
     font-size: 30px;
+}
+i.fa.fa-camera-retro.fa-3.camera-icon {
+    font-size: 30px;
+    display: block;
+}
+button.btn-confirm {
+    background: #ee190b;
+    color: white;
+    border: 1px solid #ee190b;
+    border-radius: 2.3px;
+    /* height: 29px; */
+    width: auto;
+    font-size: 17px;
+    height: 41.2px;
+    width: 274.4px;
 }

@@ -10,8 +10,7 @@ html
       meta(name='description', content='')
       meta(name='author', content='')
       link(rel='icon', href='../../favicon.ico')
-      title Home - Events
-      // Bootstrap core CSS
+      title Log In
       link(href='../../dist/css/app.min.css', rel='stylesheet')
       link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700', rel='stylesheet', type='text/css')
       // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
@@ -58,29 +57,27 @@ html
       .container
         .col-md-4
         .col-md-4.section.mtop2
-          form.form-signin
+          form.form-login
             .fbRectangle.bold
-              i.fa.fa-facebook.mright(aria-hidden='true')
-              span.font10 LOGIN WITH FACEBOOK
+              i.fa.fa-facebook.fb-icon(aria-hidden='true')
+              span.font10.font-login LOGIN WITH FACEBOOK
             .centered
-              h2.font10.bold
+              h2.font10.f-login
                 span.line
                 | OR LOGIN WITH EMAIL
                 span.line
-            img.formIcon(src='../../assets/images/icons/user-icon.svg')
+            img.icon_user(src='../../assets/images/icons/user-icon.svg')
             label.sr-only(for='inputUsername') Username
-            input#Username.form-control.labelSpace(type='text', placeholder='Username', required='', autofocus='')
-            br
-            img.formIcon(src='../../assets/images/icons/password-icon.svg')
+            input#Username.form-control.form-input.top-input(type='text', placeholder='Username', required='', autofocus='')
+            img.icon_key(src='../../assets/images/icons/password-icon.svg')
             label.sr-only(for='inputPassword') Password
-            input#inputPassword.form-control.labelSpace(type='password', placeholder='Password', required='')
-            br
-            button.btn-custom2.font20(type='submit') LOGIN
+            input#inputPassword.form-control.form-input.bottom-input(type='password', placeholder='Password', required='')
+            button.btn-login.txt-login(type='submit') LOGIN
             .checkbox
               label
                 input(type='checkbox', value='remember-me')
-                span.gray.font12 Remember me
-              a.right.vermillion.font12(href='#') Forgot your password?
+                p.cool-gray.font12 Remember me
+              a.right.vermillion.font12.passm(href='#') Forgot your password?
         .col-md-4
         // Section Icons
       // /container

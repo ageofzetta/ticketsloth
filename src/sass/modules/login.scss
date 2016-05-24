@@ -1,26 +1,60 @@
 /*--LOGIN--*/
 
+body {
+    color: #1f292e;
+}
 
-button.btn-custom2 {
+.cool-gray {
+    margin-top: 0.2em;
+    color: #9495a6;
+}
+
+button.btn-login {
     background: #ee190b;
     color: white;
     border: 1px solid #ee190b;
     border-radius: 2.3px;
     height: 60px;
     width: 100%;
+    margin-top: 20px;
+}
+
+.txt-login {
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.fb-icon {
+    margin-right: 1em;
+    vertical-align: middle;
+    font-size: 12px;
 }
 
 .line {
-    width: 5.5em;
-    height: 2px;
-    border: solid 1px #9495a6;
+    width: 5em;
+    height: 1px;
+    background: #9495a6;
     display: inline-block;
-    text-align: center;
+
+    /* text-align: center; */
     vertical-align: middle;
     margin: 10px;
 }
 
-.bold {
+.passm {
+    margin-top: 0.7em;
+}
+
+.font-login {
+    font-weight: 700;
+    letter-spacing: 1px;
+    vertical-align: middle;
+}
+
+.f-login {
+    color: #1f292e;
+    letter-spacing: 1px;
     font-weight: 700;
 }
 
@@ -36,14 +70,185 @@ button.btn-custom2 {
     text-align: center;
 }
 
-
-
-input.labelSpace {
-    text-indent: 6%;
+.form-login {
+    font-size: 0;
+    font-size: 20px;
 }
 
-.formIcon {
-    position: relative;
-    top: 1.7em;
-    left: 3%;
+.icon_key {
+    top: 52.3% ;
+    left: 9%;
+    position: absolute;
+}
+
+.icon_user {
+    top: 32.7%;
+    left: 9%;
+    position: absolute;
+}
+
+.form-input {
+    height: 70px;
+    line-height: 70px;
+    vertical-align: middle;
+    border: solid 1px #dadfe6;
+    font-size: 24px;
+    text-indent: 10%;
+}
+
+.top-input {
+    border-radius: 3px 3px 0px 0px;
+}
+.middle-input {
+    border-radius: 0px;;
+}
+.bottom-input {
+    border-radius: 0px 0px 3px 3px;
+}
+
+
+.icon_userf{    
+    position: absolute;
+    top: 17.8%;
+    left: 9%;}
+.icon_userl{
+    position: absolute;
+    top: 28%;
+    left: 9%;
+}
+.icon_phones{position: absolute;
+    top: 38.3%;
+    left: 9%;}
+.icon_mails {
+    position: absolute;
+    top: 48.8%;
+    left: 9%;
+}
+.icon_keys {
+    position: absolute;
+    top: 58.8%;
+    left: 9%;
+}
+
+
+
+@media (max-width: 992px) {
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar-left, .navbar-right {
+        float: none !important;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+
+    .navbar-nav {
+        float: none !important;
+        margin-top: 7.5px;
+    }
+
+    .navbar-nav > li {
+        float: none;
+    }
+
+    .navbar-nav > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .collapse.in {
+        display: block !important;
+    }
+}
+
+@media (max-width: 768px){
+    .line {
+        width: 1.9em;
+        height: 2px;}
+    .icon_user {
+        top: 33.3% !important;
+        left: 10%;}
+
+    .icon_key{
+        top: 53.3% !important;
+        left: 10%;
+    }
+    .form-input {font-size:20px;}
+}
+
+@media (max-width: 992px) {
+
+    .icon_userf {
+        position: absolute;
+        top: 19%;
+        left: 9%;
+    }
+
+    .icon_userl {
+        position: absolute;
+        top: 30%;
+        left: 9%;
+    }
+
+    .icon_phones {
+        position: absolute;
+        top: 41.3%;
+        left: 9%;
+    }
+    .icon_mails {
+        position: absolute;
+        top: 52.4%;
+        left: 9%;
+    }
+    .icon_keys {
+        position: absolute;
+        top: 63.3%;
+        left: 9%;
+    }
+
+}
+
+@media (max-width: 768px){
+    .icon_userf {
+        position: absolute;
+        top: 16.8%;
+        left: 10%;
+    }
+    .icon_userl {
+        position: absolute;
+        top: 26.8%;
+        left: 10%;
+    }
+    .icon_phones {
+        position: absolute;
+        top: 36.3%;
+        left: 10%;
+    }
+    .icon_mails {
+        position: absolute;
+        top: 46.4%;
+        left: 10%;
+    }
+    .icon_keys {
+        position: absolute;
+        top: 56%;
+        left: 10%;
+    }
 }

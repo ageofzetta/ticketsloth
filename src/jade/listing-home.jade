@@ -67,7 +67,9 @@ html
       .container
         // ICONS
         .row
-          span.text.font16(style='display:block;') MOST RECENT LISTINGS
+          span.text.font16.semibold(style='display:block;') 
+            | MOST RECENT LISTINGS IN 
+            span.purple CHICAGO
           .col-md-8
             .white-rectangle-search
               img.mright(src='../../assets/images/portrait/home-list.jpg', align='left', height='70px', width='70px')
@@ -317,44 +319,32 @@ html
                   button.btn-custom-search.flex-box MESSAGE
                 li.flex-item
                   button.btn-white-search.flex-box BUY TICKETS
-          .col-md-3
-            .gray-rectangle
-              p.gray Price
-              input(type='range')
-              p.gray.font14 Posted in the last:
-              select.combo-custom(name='posted')
-                option(value='days') Days
-                option(value='months') Months
-                option(value='Years') Years
-              p.gray.font14.mtop1 Seller history:
-              select.combo-custom2(name='posted')
-                option(value='') Last Month
-                option(value='') Last Month
-                option(value='') Last Month
-              p.gray.font14.mtop1 Seller history:
-              select.combo-custom2(name='posted')
-                option(value='') Last Month
-                option(value='') Last Month
-                option(value='') Last Month
-        nav.centered
-          ul.pagination
-            li
-              a(href='#', aria-label='Previous')
-                span(aria-hidden='true') «
-            li
-              a(href='#') 1
-            li
-              a(href='#') 2
-            li
-              a(href='#') 3
-            li
-              a(href='#') 4
-            li
-              a(href='#') 5
-            li
-              a(href='#', aria-label='Next')
-                span(aria-hidden='true') »
-        span.subtitle.font16 YOU MAY ALSO LIKE
+          .col-md-3.col-space
+            .centered.cool-gray.bold TICKETSLOTH IS A NEW WAY TO BUY AND SELL TICKETS
+            .mtop2.mleft2
+              img.mright(src='../../assets/images/icons/review-icon.png', align='left')
+              p
+                span.font18.bold BUYER PROTECTION
+                span.font14
+                  br
+                  | It was a humorously perilous business for both of us.
+            .mtop2.mleft2
+              img.mright(src='../../assets/images/icons/review-icon.png', align='left')
+              p
+                span.font18.bold REVIEW SYSTEM
+                span.font14
+                  br
+                  | It was a humorously perilous business for both of us.
+            .mtop2.mleft2
+              img.mright(src='../../assets/images/icons/nofees-icon.png', align='left')
+              p
+                span.font18.bold NO FEES
+                span.font14
+                  br
+                  | It was a humorously perilous business for both of us.
+        .row.mtop2.horizontal-rect TESTIMONIAL
+        .mtop2
+          span.subtitle.font16 YOU MAY ALSO LIKE
         .row-fluid
         .venues_list
             .card-footer

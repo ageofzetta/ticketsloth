@@ -10,6 +10,7 @@ html,body{
 	padding: 1ex 5ex;
 
 }
+
 .container.background-top{
 	margin-bottom: 2em;
 }
@@ -37,7 +38,10 @@ html,body{
 @import 'modules/venue_list';
 @import 'modules/_search_results';
 @import 'modules/_venue_detail';
+@import 'modules/_footer';
 @import 'modules/login';
 @import 'modules/profile';
+@import 'modules/listing_d';
 @import 'modules/listing_details';
-@import 'modules/adding';
+@import 'modules/addings';
+@import 'modules/_msg';

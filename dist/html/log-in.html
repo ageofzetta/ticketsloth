@@ -10,8 +10,7 @@
       <meta name="description" content="">
       <meta name="author" content="">
       <link rel="icon" href="../../favicon.ico">
-      <title>Home - Events</title>
-      <!-- Bootstrap core CSS-->
+      <title>Log In</title>
       <link href="../../dist/css/app.min.css" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css">
       <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries-->
@@ -54,20 +53,21 @@
       <div class="container">
         <div class="col-md-4"></div>
         <div class="col-md-4 section mtop2">
-          <form class="form-signin">
-            <div class="fbRectangle bold"><i aria-hidden="true" class="fa fa-facebook mright"></i><span class="font10">LOGIN WITH FACEBOOK</span></div>
+          <form class="form-login">
+            <div class="fbRectangle bold"><i aria-hidden="true" class="fa fa-facebook fb-icon"></i><span class="font10 font-login">LOGIN WITH FACEBOOK</span></div>
             <div class="centered">
-              <h2 class="font10 bold"><span class="line"></span>OR LOGIN WITH EMAIL<span class="line"></span></h2>
-            </div><img src="../../assets/images/icons/user-icon.svg" class="formIcon">
+              <h2 class="font10 f-login"><span class="line"></span>OR LOGIN WITH EMAIL<span class="line"></span></h2>
+            </div><img src="../../assets/images/icons/user-icon.svg" class="icon_user">
             <label for="inputUsername" class="sr-only">Username</label>
-            <input id="Username" type="text" placeholder="Username" required="" autofocus="" class="form-control labelSpace"><br><img src="../../assets/images/icons/password-icon.svg" class="formIcon">
+            <input id="Username" type="text" placeholder="Username" required="" autofocus="" class="form-control form-input top-input"><img src="../../assets/images/icons/password-icon.svg" class="icon_key">
             <label for="inputPassword" class="sr-only">Password</label>
-            <input id="inputPassword" type="password" placeholder="Password" required="" class="form-control labelSpace"><br>
-            <button type="submit" class="btn-custom2 font20">LOGIN</button>
+            <input id="inputPassword" type="password" placeholder="Password" required="" class="form-control form-input bottom-input">
+            <button type="submit" class="btn-login txt-login">LOGIN</button>
             <div class="checkbox">
               <label>
-                <input type="checkbox" value="remember-me"><span class="gray font12">Remember me</span>
-              </label><a href="#" class="right vermillion font12">Forgot your password?</a>
+                <input type="checkbox" value="remember-me">
+                <p class="cool-gray font12">Remember me</p>
+              </label><a href="#" class="right vermillion font12 passm">Forgot your password?</a>
             </div>
           </form>
         </div>

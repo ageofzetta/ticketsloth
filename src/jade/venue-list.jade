@@ -5,9 +5,9 @@ include includes/header-s.jade
 // first fold
 .wrapper
   .container
-    .section
+    .row
       span.text ALL VENUES IN CHICAGO
-      button.btn-custom.right.mtop2 ADD NEW VENUE
+      button.btn-custom.btn-addven.right.mtop2 ADD NEW VENUE
     .venues_list
       .venue
         .has_background(style="background-image:url('../../assets/images/venues.png')")
@@ -17,10 +17,10 @@ include includes/header-s.jade
             span.description
               | It was a humorously perilous business for both of us. For, before we proceed further, it must be said.
             .next_month
-              .title 5 events
+              .font10.purple 5 events
               .description in the next month
             .upcoming_venue
-              .title Upcoming:
+              .font10.purple Upcoming:
               .description Velvet Revolver
             button.see_all_events SEE ALL EVENTS
           .venue_boxr
@@ -39,10 +39,10 @@ include includes/header-s.jade
             span.description
               | It was a humorously perilous business for both of us. For, before we proceed further, it must be said.
             .next_month
-              .title 5 events
+              .font10.purple 5 events
               .description in the next month
             .upcoming_venue
-              .title Upcoming:
+              .font10.purple Upcoming:
               .description Velvet Revolver
             button.see_all_events SEE ALL EVENTS
           .venue_boxr
@@ -61,10 +61,10 @@ include includes/header-s.jade
             span.description
               | It was a humorously perilous business for both of us. For, before we proceed further, it must be said.
             .next_month
-              .title 5 events
+              .font10.purple 5 events
               .description in the next month
             .upcoming_venue
-              .title Upcoming:
+              .font10.purple Upcoming:
               .description Velvet Revolver
             button.see_all_events SEE ALL EVENTS
           .venue_boxr
@@ -83,10 +83,10 @@ include includes/header-s.jade
             span.description
               | It was a humorously perilous business for both of us. For, before we proceed further, it must be said.
             .next_month
-              .title 5 events
+              .font10.purple 5 events
               .description in the next month
             .upcoming_venue
-              .title Upcoming:
+              .font10.purple Upcoming:
               .description Velvet Revolver
             button.see_all_events SEE ALL EVENTS
           .venue_boxr
@@ -105,10 +105,10 @@ include includes/header-s.jade
             span.description
               | It was a humorously perilous business for both of us. For, before we proceed further, it must be said.
             .next_month
-              .title 5 events
+              .font10.purple 5 events
               .description in the next month
             .upcoming_venue
-              .title Upcoming:
+              .font10.purple Upcoming:
               .description Velvet Revolver
             button.see_all_events SEE ALL EVENTS
           .venue_boxr
@@ -127,10 +127,10 @@ include includes/header-s.jade
             span.description
               | It was a humorously perilous business for both of us. For, before we proceed further, it must be said.
             .next_month
-              .title 5 events
+              .font10.purple 5 events
               .description in the next month
             .upcoming_venue
-              .title Upcoming:
+              .font10.purple Upcoming:
               .description Velvet Revolver
             button.see_all_events SEE ALL EVENTS
           .venue_boxr
@@ -141,29 +141,27 @@ include includes/header-s.jade
             a.get_directions_link.font10(href="#")
               | GET DIRECTIONS
             iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1654.6301608883498!2d6.23350574586994!3d45.7762976140847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b94fc718a4c7b%3A0xe134c5da04b3c46!2s742+Evergreen+Design!5e0!3m2!1ses-419!2smx!4v1462682686323', width='110', height='180', frameborder='0', style='border:0', allowfullscreen='')
-  // /container
-  // Pagination
-  nav.centered
-    ul.pagination
-      li.disabled
-        a(href='#', aria-label='Previous')
-          span(aria-hidden='true') «
-      li.active
-        a(href='#')
-          | 1 
-          span.sr-only (current)
-      li
-        a(href='#') 2
-      li
-        a(href='#') 3
-      li
-        a(href='#') 4
-      li
-        a(href='#') 5
-      li
-        a(href='#', aria-label='Next')
-          span(aria-hidden='true') »
-  .container
-    include includes/foot-may.jade
-  // /container
-// /wrapper
+
+    nav.centered
+          ul.pagination
+            li
+              a(href='#', aria-label='Previous')
+                span(aria-hidden='true') «
+            li
+              a(href='#') 1
+            li
+              a(href='#') 2
+            li
+              a(href='#') 3
+            li
+              a(href='#') 4
+            li
+              a(href='#') 5
+            li
+              a(href='#', aria-label='Next')
+                span(aria-hidden='true') »
+    
+    //
+      Bootstrap core JavaScript
+      ==================================================
+script(src='../../dist/js/app.min.js')
