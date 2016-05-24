@@ -19,9 +19,55 @@ button.btn-red {
     font-size: 24px;
 }
 .Rectangle-586 {
-    width: auto;
+    width: 360PX;
     height: 623px;
     background-color: #ffffff;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
-    margin-right: 2em;
+}
+.Rectangle-586 {
+    width: 360px;
+    height: 623px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.05);
+    margin: 0;
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+}
+
+.profile-icons {
+    font-size: 12.9px;
+    font-weight: 700;
+    line-height:1.3;
+}
+.buyin{
+padding: 0 5em;
+}
+.text1 {
+    letter-spacing: 1px;
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.no-mr{padding-right: 0;}
+
+
+.profile-rectangle {
+    margin-left: 1em;
+    padding: 0.7em;
+    display: inline-block;
+    width: 80%;
+    background: white;
+    box-shadow: -1px 1px 10px 1px rgba(0,0,0,0.1);
+    border-radius: 0 15px 15px 15px;
+}
+.tooltip_box {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 25px 25px 0;
+    border-color: transparent #ffffff transparent transparent;
+    position: absolute;
+    right: 29.4em;
+    top: 0.55em;
 }
