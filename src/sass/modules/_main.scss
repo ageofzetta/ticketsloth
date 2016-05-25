@@ -4,7 +4,9 @@ $white: #ffffff;
     font-size: 34px;
     padding-left: 15px;
 }
-
+.place-card.default-card {
+    display: none !important;
+}
 .main {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
