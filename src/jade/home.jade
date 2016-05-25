@@ -62,104 +62,110 @@ html
     .wrapper
       .container
         .section
-          span.text.centered TICKETSLOTH IS A NEW WAY TO BUY AND SELL TICKETS
+          span.text-home.centered.semi-bold.cool-gray TICKETSLOTH IS A NEW WAY TO BUY AND SELL TICKETS
         // Section Icons
         .section
           .col-md-3.icons
             img.mright(src='../../assets/images/icons/review-icon.png', align='left')
             p
               span.font18 REVIEW SYSTEM
-              span.font14
+              span.font14.cool-gray
                 br
                 | It was a humorously perilous business for both of us.
           .col-md-3.icons
             img.mright(src='../../assets/images/icons/nofees-icon.png', align='left')
             p
               span.font18 REVIEW SYSTEM
-              span.font14
+              span.font14.cool-gray
                 br
                 | It was a humorously perilous business for both of us.
           .col-md-3.icons
             img.mright(src='../../assets/images/icons/setprice-icon.png', align='left')
             p
               span.font18 REVIEW SYSTEM
-              span.font14
+              span.font14.cool-gray
                 br
                 | It was a humorously perilous business for both of us.
           .col-md-3.icons
             img.mright(src='../../assets/images/icons/musicevents-icon.png', align='left')
             p
               span.font18 REVIEW SYSTEM
-              span.font14
+              span.font14.cool-gray
                 br
                 | It was a humorously perilous business for both of us.
         // /.Icons
-        // Boxes
-        .col-md-6.upcoming
-          .event-card.mtop2
-            .event_boxl
-              span.date 29 DIC 2015
-              span.title
-                | David Bowie
-                br
-                | @TheVenue
-              span.description
-                | It was a humorously perilous business for both of us. For, before we proceed further, it must be said that the monkey-rope was fast at both ends; fast to Queequeg's br
-              p.font14
-                b
+        // Event Cards
+        .col-md-12
+          .venues_list.mtop2
+            .card-event
+              .card-left
+                .card-box-event
+                  p.font14.purple.bold.mtop1 29 DIC 2015
+                  span.font34
+                    | David Bowie
+                    br
+                    | @TheVenue
                   br
-                  |  25 friends are attending
+                  span.font14.gray
+                    | It was a humorously perilous business for both of us. For, before we proceed further, it must be said that the monkey-rope was fast at both ends; fast to Queequeg's 
+                    br
+                  p.font14.bold.purple
+                    br
+                    |  25 friends are attending
+                    br
+                  span.Oval-42.portrait-1
+                    img.rounded(src='../../assets/images/portrait/uno.jpg')
+                  span.Oval-42.portrait-2
+                    img.rounded(src='../../assets/images/portrait/dos.jpg')
+                  span.Oval-42.portrait-3
+                    img.rounded(src='../../assets/images/portrait/tres.jpg')
+                  span.Oval-42.portrait-4
+                    img.rounded(src='../../assets/images/portrait/cuatro.jpg')
+                  button.btn-red-tickets SEE TICKETS
+                  button.btn-white-tickets SAVE FOR LATER
+                .venue_boxr
+                  span
+                    img.event-img(src='../../assets/images/portrait/large-p.png')
+                    .highlight.bold UPCOMING EVENTS
+            .card-event
+              .card-left
+                .card-box-event
+                  p.font14.purple.bold.mtop1 29 DIC 2015
+                  span.font34
+                    | David Bowie
+                    br
+                    | @TheVenue
                   br
-              p
-                span.Oval-42
-                  img.rounded(src='../../assets/images/portrait/uno.jpg')
-                span.Oval-42
-                  img.rounded(src='../../assets/images/portrait/dos.jpg')
-                span.Oval-42
-                  img.rounded(src='../../assets/images/portrait/tres.jpg')
-                span.Oval-42
-                  img.rounded(src='../../assets/images/portrait/cuatro.jpg')
-                button.btn-tickets.btn-custom SEE TICKETS
-                button.btn-white WISHLIST
-            .event_boxr(style='background-image:url(../../assets/images/portrait/large-p.png)')
-              .highlight UPCOMING EVENTS
-        .col-md-6.upcoming
-          .event-card.mtop2
-            .event_boxl
-              span.date 29 DIC 2015
-              span.title
-                | David Bowie
-                br
-                | @TheVenue
-              span.description
-                | It was a humorously perilous business for both of us. For, before we proceed further, it must be said that the monkey-rope was fast at both ends; fast to Queequeg's br
-              p.font14
-                b
-                  br
-                  |  25 friends are attending
-                  br
-              p
-                span.Oval-42
-                  img.rounded(src='../../assets/images/portrait/uno.jpg')
-                span.Oval-42
-                  img.rounded(src='../../assets/images/portrait/dos.jpg')
-                span.Oval-42
-                  img.rounded(src='../../assets/images/portrait/tres.jpg')
-                span.Oval-42
-                  img.rounded(src='../../assets/images/portrait/cuatro.jpg')
-                button.btn-tickets.btn-custom SEE TICKETS
-                button.btn-white WISHLIST
-            .event_boxr(style='background-image:url(../../assets/images/portrait/large-p.png)')
-              .highlight UPCOMING EVENTS
-        // /.boxes
+                  span.font14.gray
+                    | It was a humorously perilous business for both of us. For, before we proceed further, it must be said that the monkey-rope was fast at both ends; fast to Queequeg's 
+                    br
+                  p.font14.bold.purple
+                    br
+                    |  25 friends are attending
+                    br
+                  span.Oval-42.portrait-1
+                    img.rounded(src='../../assets/images/portrait/uno.jpg')
+                  span.Oval-42.portrait-2
+                    img.rounded(src='../../assets/images/portrait/dos.jpg')
+                  span.Oval-42.portrait-3
+                    img.rounded(src='../../assets/images/portrait/tres.jpg')
+                  span.Oval-42.portrait-4
+                    img.rounded(src='../../assets/images/portrait/cuatro.jpg')
+                  button.btn-red-tickets SEE TICKETS
+                  button.btn-white-tickets SAVE FOR LATER
+                .venue_boxr
+                  span
+                    img.event-img(src='../../assets/images/portrait/large-p.png')
+                    .highlight.bold UPCOMING EVENTS
+        // /.event card
         // Listings
         .row.mtop2
-          span.text.font16
+          span.text-may.font16
             | WE FOUND 
             span.bold 14 PEOPLE
             |  SELLING TICKETS FOR 
             span.purple.bold VELVET REVOLVER:
-          .col-md-9
+          .col-md-8.m-offset-1
             .white-rectangle-search
               img.mright(src='../../assets/images/portrait/home-list.jpg', align='left', height='70px', width='70px')
               .flex-contain-search
@@ -176,12 +182,12 @@ html
                 li.flex-item
                   p.flex-box
                     b x1
-                    br
-                    | ticket(s)
+                  p.font10 ticket(s)
                 li.flex-item
                   img.rounded.flex-box(src='../../assets/images/portrait/100.jpg', width='40px', height='40px')
-                  .font10 Steve Rogers
-                  .rating
+                  span.font10 Steve Rogers
+                  #star
+                    img(src='../../assets/images/star-icon.svg')
                     img(src='../../assets/images/star-icon.svg')
                     img(src='../../assets/images/star-icon.svg')
                     img(src='../../assets/images/star-icon.svg')
@@ -206,12 +212,12 @@ html
                 li.flex-item
                   p.flex-box
                     b x1
-                    br
-                    | ticket(s)
+                  p.font10 ticket(s)
                 li.flex-item
                   img.rounded.flex-box(src='../../assets/images/portrait/100.jpg', width='40px', height='40px')
-                  .font10 Steve Rogers
-                  .rating
+                  span.font10 Steve Rogers
+                  #star
+                    img(src='../../assets/images/star-icon.svg')
                     img(src='../../assets/images/star-icon.svg')
                     img(src='../../assets/images/star-icon.svg')
                     img(src='../../assets/images/star-icon.svg')
@@ -236,12 +242,12 @@ html
                 li.flex-item
                   p.flex-box
                     b x1
-                    br
-                    | ticket(s)
+                  p.font10 ticket(s)
                 li.flex-item
                   img.rounded.flex-box(src='../../assets/images/portrait/100.jpg', width='40px', height='40px')
-                  .font10 Steve Rogers
-                  .rating
+                  span.font10 Steve Rogers
+                  #star
+                    img(src='../../assets/images/star-icon.svg')
                     img(src='../../assets/images/star-icon.svg')
                     img(src='../../assets/images/star-icon.svg')
                     img(src='../../assets/images/star-icon.svg')
@@ -266,12 +272,12 @@ html
                 li.flex-item
                   p.flex-box
                     b x1
-                    br
-                    | ticket(s)
+                  p.font10 ticket(s)
                 li.flex-item
                   img.rounded.flex-box(src='../../assets/images/portrait/100.jpg', width='40px', height='40px')
-                  .font10 Steve Rogers
-                  .rating
+                  span.font10 Steve Rogers
+                  #star
+                    img(src='../../assets/images/star-icon.svg')
                     img(src='../../assets/images/star-icon.svg')
                     img(src='../../assets/images/star-icon.svg')
                     img(src='../../assets/images/star-icon.svg')
@@ -296,12 +302,12 @@ html
                 li.flex-item
                   p.flex-box
                     b x1
-                    br
-                    | ticket(s)
+                  p.font10 ticket(s)
                 li.flex-item
                   img.rounded.flex-box(src='../../assets/images/portrait/100.jpg', width='40px', height='40px')
-                  .font10 Steve Rogers
-                  .rating
+                  span.font10 Steve Rogers
+                  #star
+                    img(src='../../assets/images/star-icon.svg')
                     img(src='../../assets/images/star-icon.svg')
                     img(src='../../assets/images/star-icon.svg')
                     img(src='../../assets/images/star-icon.svg')
@@ -326,12 +332,12 @@ html
                 li.flex-item
                   p.flex-box
                     b x1
-                    br
-                    | ticket(s)
+                  p.font10 ticket(s)
                 li.flex-item
                   img.rounded.flex-box(src='../../assets/images/portrait/100.jpg', width='40px', height='40px')
-                  .font10 Steve Rogers
-                  .rating
+                  span.font10 Steve Rogers
+                  #star
+                    img(src='../../assets/images/star-icon.svg')
                     img(src='../../assets/images/star-icon.svg')
                     img(src='../../assets/images/star-icon.svg')
                     img(src='../../assets/images/star-icon.svg')
@@ -356,11 +362,16 @@ html
                 li.flex-item
                   p.flex-box
                     b x1
-                    br
-                    | ticket(s)
+                  p.font10 ticket(s)
                 li.flex-item
                   img.rounded.flex-box(src='../../assets/images/portrait/100.jpg', width='40px', height='40px')
-                  .font10 Steve Rogers
+                  span.font10 Steve Rogers
+                  #star
+                    img(src='../../assets/images/star-icon.svg')
+                    img(src='../../assets/images/star-icon.svg')
+                    img(src='../../assets/images/star-icon.svg')
+                    img(src='../../assets/images/star-icon.svg')
+                    img(src='../../assets/images/star-icon.svg')
                 li.flex-item
                   button.btn-custom-search.flex-box MESSAGE
                 li.flex-item
@@ -381,12 +392,12 @@ html
                 li.flex-item
                   p.flex-box
                     b x1
-                    br
-                    | ticket(s)
+                  p.font10 ticket(s)
                 li.flex-item
                   img.rounded.flex-box(src='../../assets/images/portrait/100.jpg', width='40px', height='40px')
-                  .font10 Steve Rogers
-                  .rating
+                  span.font10 Steve Rogers
+                  #star
+                    img(src='../../assets/images/star-icon.svg')
                     img(src='../../assets/images/star-icon.svg')
                     img(src='../../assets/images/star-icon.svg')
                     img(src='../../assets/images/star-icon.svg')
@@ -398,101 +409,196 @@ html
           .col-md-3.Rectangle-222 Testimonial
         // /.Listings
         .row.mtop2
-          span.text.font16 YOU MAY ALSO LIKE
-          .row
-            .col-lg-4
-              .Rectangle-132.mtop2
-                .event_boxi
-                  p.font14.mtop1 29 DIC 2015
-                  span.font28
-                    | David Bowie
-                    br
-                    | @TheVenue
+          span.text-may.font16 YOU MAY ALSO LIKE
+        .row-fluid
+        .venues_list
+          .card-footer
+            .card-left
+              .card-box
+                p.font11.purple.bold.mtop1 29 DIC 2015
+                span.font28
+                  | David Bowie
                   br
+                  | @TheVenue
+                br
+                span.font11.gray
+                  | It was a humorously perilous business for both of us. For, before we proceed further, it must be said.
+                p.font11.bold.purple
                   br
-                  span.font11
-                    | It was a humorously perilous business for both of us. For, before we proceed further, it must be said.
-                  p.font11
-                    b
-                      br
-                      |  25 friends are attending
-                      br
-                  p
-                    span.Oval-42
-                      img.rounded(src='../../assets/images/portrait/uno.jpg')
-                    span.Oval-42
-                      img.rounded(src='../../assets/images/portrait/dos.jpg')
-                    span.Oval-42
-                      img.rounded(src='../../assets/images/portrait/tres.jpg')
-                    span.Oval-42
-                      img.rounded(src='../../assets/images/portrait/cuatro.jpg')
-                    button.btn-tickets.btn-custom1 SEE TICKETS
-                    button.btn-white1 SAVE FOR LATER
-                .event_boxd.gradient
-                  span
-                    img(src='../../assets/images/portrait/medium-p.png')
-            .col-lg-4
-              .Rectangle-132.mtop2
-                .event_boxi
-                  p.font14.mtop1 29 DIC 2015
-                  span.font28
-                    | David Bowie
-                    br
-                    | @TheVenue
+                  |  25 friends are attending
                   br
+                span.Oval-42.portrait-1
+                  img.rounded(src='../../assets/images/portrait/uno.jpg')
+                span.Oval-42.portrait-2
+                  img.rounded(src='../../assets/images/portrait/dos.jpg')
+                span.Oval-42.portrait-3
+                  img.rounded(src='../../assets/images/portrait/tres.jpg')
+                span.Oval-42.portrait-4
+                  img.rounded(src='../../assets/images/portrait/cuatro.jpg')
+                button.btn-red-tickets SEE TICKETS
+                button.btn-white-tickets SAVE FOR LATER
+              .venue_boxr
+                .gradiente
+                  .title FROM
+                  .price $45
+                span
+                  img(src='../../assets/images/portrait/medium-p.png')
+          .card-footer
+            .card-left
+              .card-box
+                p.font11.purple.bold.mtop1 29 DIC 2015
+                span.font28
+                  | David Bowie
                   br
-                  span.font11
-                    | It was a humorously perilous business for both of us. For, before we proceed further, it must be said.
-                  p.font11
-                    b
-                      br
-                      |  25 friends are attending
-                      br
-                  p
-                    span.Oval-42
-                      img.rounded(src='../../assets/images/portrait/uno.jpg')
-                    span.Oval-42
-                      img.rounded(src='../../assets/images/portrait/dos.jpg')
-                    span.Oval-42
-                      img.rounded(src='../../assets/images/portrait/tres.jpg')
-                    span.Oval-42
-                      img.rounded(src='../../assets/images/portrait/cuatro.jpg')
-                    button.btn-tickets.btn-custom1 SEE TICKETS
-                    button.btn-white1 SAVE FOR LATER
-                .event_boxd.gradient
-                  span
-                    img(src='../../assets/images/portrait/medium-p.png')
-            .col-lg-4
-              .Rectangle-132.mtop2
-                .event_boxi
-                  p.font14.mtop1 29 DIC 2015
-                  span.font28
-                    | David Bowie
-                    br
-                    | @TheVenue
+                  | @TheVenue
+                br
+                span.font11.gray
+                  | It was a humorously perilous business for both of us. For, before we proceed further, it must be said.
+                p.font11.bold.purple
                   br
+                  |  25 friends are attending
                   br
-                  span.font11
-                    | It was a humorously perilous business for both of us. For, before we proceed further, it must be said.
-                  p.font11
-                    b
-                      br
-                      |  25 friends are attending
-                      br
-                  p
-                    span.Oval-42
-                      img.rounded(src='../../assets/images/portrait/uno.jpg')
-                    span.Oval-42
-                      img.rounded(src='../../assets/images/portrait/dos.jpg')
-                    span.Oval-42
-                      img.rounded(src='../../assets/images/portrait/tres.jpg')
-                    span.Oval-42
-                      img.rounded(src='../../assets/images/portrait/cuatro.jpg')
-                    button.btn-tickets.btn-custom1 SEE TICKETS
-                    button.btn-white1 SAVE FOR LATER
-                .event_boxd.gradient
-                  span
-                    img(src='../../assets/images/portrait/medium-p.png')
-          script(src='../../dist/js/app.min.js')
+                span.Oval-42.portrait-1
+                  img.rounded(src='../../assets/images/portrait/uno.jpg')
+                span.Oval-42.portrait-2
+                  img.rounded(src='../../assets/images/portrait/dos.jpg')
+                span.Oval-42.portrait-3
+                  img.rounded(src='../../assets/images/portrait/tres.jpg')
+                span.Oval-42.portrait-4
+                  img.rounded(src='../../assets/images/portrait/cuatro.jpg')
+                button.btn-red-tickets SEE TICKETS
+                button.btn-white-tickets SAVE FOR LATER
+              .venue_boxr
+                .gradiente
+                  .title FROM
+                  .price $45
+                span
+                  img(src='../../assets/images/portrait/medium-p.png')
+          .card-footer
+            .card-left
+              .card-box
+                p.font11.purple.bold.mtop1 29 DIC 2015
+                span.font28
+                  | David Bowie
+                  br
+                  | @TheVenue
+                br
+                span.font11.gray
+                  | It was a humorously perilous business for both of us. For, before we proceed further, it must be said.
+                p.font11.bold.purple
+                  br
+                  |  25 friends are attending
+                  br
+                span.Oval-42.portrait-1
+                  img.rounded(src='../../assets/images/portrait/uno.jpg')
+                span.Oval-42.portrait-2
+                  img.rounded(src='../../assets/images/portrait/dos.jpg')
+                span.Oval-42.portrait-3
+                  img.rounded(src='../../assets/images/portrait/tres.jpg')
+                span.Oval-42.portrait-4
+                  img.rounded(src='../../assets/images/portrait/cuatro.jpg')
+                button.btn-red-tickets SEE TICKETS
+                button.btn-white-tickets SAVE FOR LATER
+              .venue_boxr
+                .gradiente
+                  .title FROM
+                  .price $45
+                span
+                  img(src='../../assets/images/portrait/medium-p.png')
+        .venues_list
+          .card-footer
+            .card-left
+              .card-box
+                p.font11.purple.bold.mtop1 29 DIC 2015
+                span.font28
+                  | David Bowie
+                  br
+                  | @TheVenue
+                br
+                span.font11.gray
+                  | It was a humorously perilous business for both of us. For, before we proceed further, it must be said.
+                p.font11.bold.purple
+                  br
+                  |  25 friends are attending
+                  br
+                span.Oval-42.portrait-1
+                  img.rounded(src='../../assets/images/portrait/uno.jpg')
+                span.Oval-42.portrait-2
+                  img.rounded(src='../../assets/images/portrait/dos.jpg')
+                span.Oval-42.portrait-3
+                  img.rounded(src='../../assets/images/portrait/tres.jpg')
+                span.Oval-42.portrait-4
+                  img.rounded(src='../../assets/images/portrait/cuatro.jpg')
+                button.btn-red-tickets SEE TICKETS
+                button.btn-white-tickets SAVE FOR LATER
+              .venue_boxr
+                .gradiente
+                  .title FROM
+                  .price $45
+                span
+                  img(src='../../assets/images/portrait/medium-p.png')
+          .card-footer
+            .card-left
+              .card-box
+                p.font11.purple.bold.mtop1 29 DIC 2015
+                span.font28
+                  | David Bowie
+                  br
+                  | @TheVenue
+                br
+                span.font11.gray
+                  | It was a humorously perilous business for both of us. For, before we proceed further, it must be said.
+                p.font11.bold.purple
+                  br
+                  |  25 friends are attending
+                  br
+                span.Oval-42.portrait-1
+                  img.rounded(src='../../assets/images/portrait/uno.jpg')
+                span.Oval-42.portrait-2
+                  img.rounded(src='../../assets/images/portrait/dos.jpg')
+                span.Oval-42.portrait-3
+                  img.rounded(src='../../assets/images/portrait/tres.jpg')
+                span.Oval-42.portrait-4
+                  img.rounded(src='../../assets/images/portrait/cuatro.jpg')
+                button.btn-red-tickets SEE TICKETS
+                button.btn-white-tickets SAVE FOR LATER
+              .venue_boxr
+                .gradiente
+                  .title FROM
+                  .price $45
+                span
+                  img(src='../../assets/images/portrait/medium-p.png')
+          .card-footer
+            .card-left
+              .card-box
+                p.font11.purple.bold.mtop1 29 DIC 2015
+                span.font28
+                  | David Bowie
+                  br
+                  | @TheVenue
+                br
+                span.font11.gray
+                  | It was a humorously perilous business for both of us. For, before we proceed further, it must be said.
+                p.font11.bold.purple
+                  br
+                  |  25 friends are attending
+                  br
+                span.Oval-42.portrait-1
+                  img.rounded(src='../../assets/images/portrait/uno.jpg')
+                span.Oval-42.portrait-2
+                  img.rounded(src='../../assets/images/portrait/dos.jpg')
+                span.Oval-42.portrait-3
+                  img.rounded(src='../../assets/images/portrait/tres.jpg')
+                span.Oval-42.portrait-4
+                  img.rounded(src='../../assets/images/portrait/cuatro.jpg')
+                button.btn-red-tickets SEE TICKETS
+                button.btn-white-tickets SAVE FOR LATER
+              .venue_boxr
+                .gradiente
+                  .title FROM
+                  .price $45
+                span
+                  img(src='../../assets/images/portrait/medium-p.png')
+        
         // /container
-      // /wrapper
+        // /wrapper
